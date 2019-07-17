@@ -22,7 +22,7 @@ trait TestsMockHelperTrait
      *
      * @return  \Mockery\MockInterface
      */
-    public function mock($class)
+    public function mock($class, $mock = NULL)
     {
         $mock = Mockery::mock($class);
         App::instance($class, $mock);
